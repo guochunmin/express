@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+  </head>
+  <body>
+  	<p>我是首页哟</p>
+  	<div>
+  		<button onclick="test()">获取数据</button>
+  	</div>
+  	<a href="/login">登陆页面页面</a>
+  	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  	<script type="text/javascript">
+  		function test(){
+	  		$.ajax({
+	  			url:'/api/index',
+	  			type:"post",
+	  			success:function(res){
+	  				console.log("res",res);
+	  			}
+	  		})
+  		}
+  	</script>
+  </body>
+</html>

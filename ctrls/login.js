@@ -1,0 +1,20 @@
+module.exports=function(router){
+	router.get('/login', function(req, res, next) {
+	  res.render('login');
+	});
+	router.use("/api/login",function(req,res){
+		res.send({
+			code:1,
+			msg:[
+				{
+					id:1,
+					text:"111"
+				},
+				{
+					id:2,
+					text:"222"
+				}
+			]
+		})
+	});
+}
