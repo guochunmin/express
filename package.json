@@ -1,7 +1,4 @@
 {
-  "name": "template-express",
-  "version": "0.0.0",
-  "private": true,
   "scripts": {
     "start": "NODE_ENV=production node bin/www",
     "dev": "gulp",
